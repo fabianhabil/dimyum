@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const ornaments = [
@@ -31,14 +32,23 @@ const Section1 = () => {
         })}
 
         <div className="container flex h-[91vh] items-center justify-between">
-          <div className="flex flex-col gap-4 sm:gap-8">
+          <motion.div
+            className="flex flex-col gap-4 sm:gap-8"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.4,
+              delay: 0.3,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
             <p className={cn('font-integralbold text-5xl text-black sm:text-7xl')}>
               CREATE YOUR <br className="hidden sm:flex" /> OWN DIMSUM
             </p>
             <p className="text-base sm:w-[90%] sm:text-lg">
               Make your custom dimsum at Dimyum. Choose toppings, sauces, and enjoy!
             </p>
-          </div>
+          </motion.div>
 
           <Image
             src={'/home/dimsum.png'}

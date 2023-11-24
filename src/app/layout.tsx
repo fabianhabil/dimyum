@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import { TailwindIndicator } from '@/components/atoms/TailwindIndicator/TailwindIndicator';
 import { siteConfig } from '@/components/constants/site';
+import { Toaster } from '@/components/ui/toast/toaster';
 import { fontExpandedRegular, fontIntegralBold, fontMontserrat } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div>{children}</div>
           <TailwindIndicator />
+          <Toaster />
         </body>
       </html>
     </>

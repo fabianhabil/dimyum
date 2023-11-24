@@ -1,15 +1,17 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
+const marqueeText = ['Best Quality Guarantee', 'Effortless Ordering', 'Tasty Dimsum', 'Authentic Flavors', 'Dimyum'];
+
 const Section2 = () => {
   return (
     <>
-      <div className="flex h-[50px] items-center bg-[#212322]">
+      <div className="flex h-[75px] items-center bg-[#212322]">
         <Marquee autoFill={true}>
-          {[...Array(10)].map((_, index) => {
+          {marqueeText.map((data, index) => {
             return (
-              <p className="px-4 font-expandedregular text-lg text-white" key={index}>
-                LOREM IPSUM
+              <p className="px-4 font-expandedregular text-lg uppercase text-white" key={index}>
+                {data}
               </p>
             );
           })}

@@ -31,26 +31,31 @@ const Review = () => {
             className="mx-auto w-[75%] rounded-[0px] border-x-0 border-t-0 border-[rgba(0,0,0,0.3)] md:m-0"
             placeholder="Name"
             onChange={(e) => setName(() => e.target.value)}
+            value={name}
           />
           <Input
             className="mx-auto w-[75%] rounded-[0px] border-x-0 border-t-0 border-[rgba(0,0,0,0.3)] md:m-0"
             placeholder="Email Binus"
             onChange={(e) => setEmail(() => e.target.value)}
+            value={email}
           />
           <Input
             className="mx-auto w-[75%] rounded-[0px] border-x-0 border-t-0 border-[rgba(0,0,0,0.3)] md:m-0"
             placeholder="NIM"
             onChange={(e) => setNim(() => e.target.value)}
+            value={nim}
           />
           <Textarea
             className="mx-auto w-[75%] rounded-[0px] border-x-0 border-t-0 border-[rgba(0,0,0,0.3)] md:m-0"
             placeholder="Feedback"
             onChange={(e) => setFeedback(() => e.target.value)}
+            value={feedback}
           />
           <Textarea
             className="mx-auto w-[75%] rounded-[0px] border-x-0 border-t-0 border-[rgba(0,0,0,0.3)] md:m-0"
             placeholder="Testimoni"
             onChange={(e) => setTestimoni(() => e.target.value)}
+            value={testimoni}
           />
           <Button
             className="mx-auto w-[75%] rounded-[8px] bg-[#FF5124] text-white hover:bg-[#FF5124]/80 md:m-0"

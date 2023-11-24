@@ -78,6 +78,11 @@ const Review = () => {
                   process.env.NODE_ENV === 'production' ? 1 : 0
                 );
                 toast({ title: 'Feedback successful! Thank you for making dimyum better!', className: 'bg-white' });
+                setName(() => '');
+                setEmail(() => '');
+                setFeedback(() => '');
+                setNim(() => '');
+                setTestimoni(() => '');
               } catch (e) {
                 toast({ title: 'Server Error! Feedback not submitted!', variant: 'destructive' });
               }

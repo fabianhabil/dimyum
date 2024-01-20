@@ -80,7 +80,7 @@ const Review = () => {
                     NIM: nim,
                     Testimoni: testimoni
                   },
-                  process.env.NODE_ENV === 'production' ? 1 : 0
+                  1
                 );
                 toast({ title: 'Feedback successful! Thank you for making dimyum better!', className: 'bg-white' });
                 setName(() => '');
